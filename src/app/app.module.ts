@@ -3,10 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TippingComponent } from './components/tipping/tipping.component';
+import { HomeComponent } from './components/home/home.component';
+import { NavComponent } from './components/nav/nav.component';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TippingComponent,
+    HomeComponent,
+    NavComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,
