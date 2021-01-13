@@ -16,4 +16,9 @@
         {{thingy.description}}</span>
     </li>
   </ul>
+  <button class=btn
+          btn-small
+          btn-danger
+          *ngIf="hasCompletedItems"
+          (click)="clearItems()">Clear Completed Items</button>
 </div>

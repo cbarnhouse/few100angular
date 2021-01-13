@@ -29,4 +29,11 @@ export class TodoListComponent implements OnInit {
     item.complete = true;
   }
 
+  clearItems() {
+    this.items = this.items.filter(item => item.complete == false);
+  }
+
+  get hasCompletedItems(): boolean {
+    return this.items.filter(item => item.complete).length > 0;
+  }
 }
